@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINspiration</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="icon" href="/pinspiration.ico" type="image">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <body>
+    <% if(nav === true){  %>
+    <div class="w-full px-10 py-3 flex justify-between bg-[#4b0000] text-white items-center">
+      <div class="flex items-center gap-4">
+        <!-- Logo -->
+        <img src="/images/pinterest-icon.png" alt="Logo" class="h-8 w-auto">
+        <h3 class="text-xl font-bold">PINspiration</h3>
+      </div>
+      <div class="flex gap-10 items-center">
+        <a href="/profile" class="hover:underline">Profile</a>
+        <a href="/feed" class="hover:underline">My Feed</a>
+        <a class="px-3 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800" href="/logout">Logout</a>
+      </div>
+    </div>
+    <% } %>
+    <!-- Rest of your body content -->
+  </body>
+  
