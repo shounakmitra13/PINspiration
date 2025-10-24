@@ -23,7 +23,7 @@ username:String,
 name:String,
 email:String,
 password:String,
-phone:Number,
+Phone:Number,
 profileImage:String,
 contact:Number,
 boards:{
