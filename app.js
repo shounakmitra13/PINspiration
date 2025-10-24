@@ -1,13 +1,20 @@
 var createError = require('http-errors');
 var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-const expressSession=require("express-session")
-var indexRouter = require('./routes/index');
+var path = require('path');// This imports the built-in Node.js path module. It provides utilities for working with file and directory paths in a cross-platform way.
+var cookieParser = require('cookie-parser');//Imports the cookie-parser middleware. It parses incoming cookies from client requests and makes them accessible in req.cookies
+var logger = require('morgan');//Imports the morgan middleware, which logs HTTP requests to the console. 
+const expressSession=require("express-session")//Imports the express-session middleware, which provides session management for your application. 
+var indexRouter = require('./routes/index');//: Imports the router module from the file ./routes/index.js
 var usersRouter = require('./routes/users');
-const passport = require('passport');
-require('dotenv').config();
+const passport = require('passport');//Imports the passport authentication middleware.
+require('dotenv').config();//Loads environment variables from a .env file into process.env
+/*Modules are imported: These include essential libraries like express, middleware (e.g., cookie-parser), and utility modules (e.g., path).
+Middleware and Routes:
+Middleware like express-session, cookie-parser, and morgan help handle various aspects of request processing.
+Routes from index.js and users.js define specific paths in your application.
+Authentication: passport is set up for managing user logins securely.
+Environment Configuration: dotenv loads sensitive configuration settings from .env.
+*/ 
 
 var app = express();
 
